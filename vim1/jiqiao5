@@ -1,0 +1,26 @@
+
+	var nenenenewod(" + arguments+"," + arguments2+")"
+	var new="method(" + arguments + "," + arguments2 + ")"
+	var c="(" + arguments + "," + arguments2 + ")"
+	var new="method(" + arguments + "," + arguments2 + ")"
+	var nenewmethod(" + arguments + "," + arguments2 + ")"
+	var c:="method("+arguments+","+arguments2+")"
+	var nenewmethod("+arguments+","+arguments2+")"
+	var new="method("+arguments+","+arguments2+")"
+	var new="method("+arguments+","+arguments2+")"
+	var new="method("+arguments+","+arguments2+")"
+	var new="method("+arguments+","+arguments2+")"
+	var new="method("+arguments+","+arguments2+")"
+	var new="method("+arguments+","+arguments2+")"
+	var new="method("+arguments+","+arguments2+")"
+	var new="method("+arguments+","+arguments2+")"
+	var new="method("+arguments+","+arguments2+")"
+/*****
+本节是查找并手动替换
+发现使用vim的一个中心思想就是尽可能把重复而无趣的事情交个机器去执行，而我们的大脑应该从这些枯燥无无趣的重复劳动中解脱出来，所以就是要
+在每次使用esc的时候都要尽量把他们的操作都作为可以被计算机执行的宏，就是每个操作都是一个技巧
+
+
+
+
+****/

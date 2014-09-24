@@ -1,0 +1,31 @@
+ ,hao are yo hello ,hao are yo hello ,hao are hello ,hao are yo hello ,hao are yo hello ,hao are yo hello ,hao are youuuu
+ 
+  hello ,hao are yo hello ,hao are youuuu
+ 
+ hehello ,hao are youuuu
+ hello ,hao are yo hello ,hao are yo hello ,hao are yo hello ,hao are youuuu
+ hello ,hao are yo hello ,hao are yo hello ,hao are yo hello ,hao are youuuu
+ hello ,hao are yo hello ,hao are yo hello ,hao are yo hello ,hao are youuuu
+ hello ,hao are yo hello ,hao are yo hello ,hao are yo hello ,hao are youuuu
+ hello ,hao are yo hello ,hao are yo hello ,hao are yo hello ,hao are youuuu
+
+
+
+
+
+/****
+我们已经知道dd是删除一个整行，那么他删除字母粒度的命令那？
+db ：delete before 删除当前光标前面的内容，到一个空格位置，
+dw : delete word 是删除一个单词的意思 是删除当前位置到其后的一个空格位置，也就是说只有你在word的头部的适合才能完整的删除一个单词
+daw：delete a word 无论你在句子的什么地方，都能删除两个空格之间的地方
+
+*****有一个比较有意思的地方是，我们在插入模式的所有操作都在.命令的监控之下，这应该是和别的vim使用很大的不同的地方。别的文字编译器，我们感觉自己在这个编辑器里就是任意的驰骋的，
+我们就是一直在编写巨大的文字内容块，我们从来不想，也不能把这些文字座位块进行再次的组织。但是vim可以，到这里发现vim的编程理念和unix的理念是想通的，unix是强调小程序理念，大的程序
+都是通过小的程序组装起来发挥更大的作用的，其实对比会发现vim的理念也是这样的，我们可以吧iac等这些插入操作到esc之间的这一部分类比成unix的小程序，而normal下的那些命令可以作为pci
+来理解，就是他们来负责这些个个esc之间的内容的组织，db dw daw这些细粒度的控制操作也整体现着unix精密而详细的进程间的通信机制
+
+
+之前没有注意到的一个问题，为什么vim条状到行首和行尾要借用正则表达式的概念即：^$ 为什么不直接用before end 原来这两个单词已经被用啦，就是用在单词上啦，既然被更小粒度的同类操作占用了高粒度的操作也只好在到别的地方借啦，毕竟都是一家人 乱抢是不好的哦:)
+
+我们已经说啦，vim的.一直在监视这我们的操作，那么结果哪？费力监视收集数据总要做点什么呀，目的就是使用.我们说手收集的目的是使用，vim为了让我们使用.收集的数据对可以重复的操作做了特别的优化
+****/

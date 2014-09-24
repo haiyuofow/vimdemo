@@ -1,20 +1,20 @@
 
-	var foo="method(" + arguments+"," + arguments2+")"
-	var foo="method(" + arguments + "," + arguments2 + ")"
-	var foo="method(" + arguments + "," + arguments2 + ")"
-	var foo="method(" + arguments + "," + arguments2 + ")"
-	var foo="method(" + arguments + "," + arguments2 + ")"
-	var foo="method("+arguments+","+arguments2+")"
-	var foo="method("+arguments+","+arguments2+")"
-	var foo="method("+arguments+","+arguments2+")"
-	var foo="method("+arguments+","+arguments2+")"
-	var foo="method("+arguments+","+arguments2+")"
-	var foo="method("+arguments+","+arguments2+")"
-	var foo="method("+arguments+","+arguments2+")"
-	var foo="method("+arguments+","+arguments2+")"
-	var foo="method("+arguments+","+arguments2+")"
-	var foo="method("+arguments+","+arguments2+")"
-	var foo="method("+arguments+","+arguments2+")"
+	var nenenenewod(" + arguments+"," + arguments2+")"
+	var new="method(" + arguments + "," + arguments2 + ")"
+	var new="method(" + arguments + "," + arguments2 + ")"
+	var new="method(" + arguments + "," + arguments2 + ")"
+	var nenewmethod(" + arguments + "," + arguments2 + ")"
+	var c:="method("+arguments+","+arguments2+")"
+	var nenewmethod("+arguments+","+arguments2+")"
+	var new="method("+arguments+","+arguments2+")"
+	var new="method("+arguments+","+arguments2+")"
+	var new="method("+arguments+","+arguments2+")"
+	var new="method("+arguments+","+arguments2+")"
+	var new="method("+arguments+","+arguments2+")"
+	var new="method("+arguments+","+arguments2+")"
+	var new="method("+arguments+","+arguments2+")"
+	var new="method("+arguments+","+arguments2+")"
+	var new="method("+arguments+","+arguments2+")"
 
 /**
 平时使用的插入命令都是不改变文字的插入
@@ -25,4 +25,10 @@ c$是删除当前位置下的所有内容
 
 i a出入的缺点，或者说是c操作的优点，i a无法以当前断点位置删除内容，如同这里，明显这里每行的特征是希望在+号前后添加内容，所以宏录制的时候就应该从+出直接操作，如果用a操作则下次重复的时候必须也要定位到a才能重复，而明显最后一个+后面不是a，用i操作是同样的问题。但是用c操作就可以直接对+作为分隔符，那么录制的效果自然是最好的,一个.重复的动作是从两次按esc之间的时间的所有操作都在一个.的可重复范围
 可以试验求证
+
+.是重复两个两次esc之间的内容
+;是重复f{char}之间的内容;是对f{char}的内容向后查找,当然我们也可以使用都好向前查找，这就和hl的作用是一样的啦，只是hl是固定的按照一个字符的比例来处理而；，则是根据分隔符按照这些划分开的段来处理
+这些命令的重复如同宏录制一样是成对的出现的
+
+f是在行内查找的，那么行间查找的是什么哪？就是/char这个我已经知道，关键是比较这里的n下一个和N上一个就会发现，这本质上是命令在?和/之间的切换, 但是在对于f+操作的适合,;操作的时候命令行里并没有显示出来这种差别，这应该是这两个操作的粒度不同的原因吧
 **/
