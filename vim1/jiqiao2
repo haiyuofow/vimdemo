@@ -1,0 +1,8 @@
+	var foo=1;
+	var bar='a';
+	var foobar=foo+bar;
+/**
+A是$a的组合键
+.可以重复上次的操作
+
+**/

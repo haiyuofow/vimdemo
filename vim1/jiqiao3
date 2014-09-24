@@ -1,0 +1,28 @@
+
+	var foo="method(" + arguments+"," + arguments2+")"
+	var foo="method(" + arguments + "," + arguments2 + ")"
+	var foo="method(" + arguments + "," + arguments2 + ")"
+	var foo="method(" + arguments + "," + arguments2 + ")"
+	var foo="method(" + arguments + "," + arguments2 + ")"
+	var foo="method("+arguments+","+arguments2+")"
+	var foo="method("+arguments+","+arguments2+")"
+	var foo="method("+arguments+","+arguments2+")"
+	var foo="method("+arguments+","+arguments2+")"
+	var foo="method("+arguments+","+arguments2+")"
+	var foo="method("+arguments+","+arguments2+")"
+	var foo="method("+arguments+","+arguments2+")"
+	var foo="method("+arguments+","+arguments2+")"
+	var foo="method("+arguments+","+arguments2+")"
+	var foo="method("+arguments+","+arguments2+")"
+	var foo="method("+arguments+","+arguments2+")"
+
+/**
+平时使用的插入命令都是不改变文字的插入
+i是插入 a是append都不会更改文字的状态
+c也是插入但是他是宝刀出鞘必饮血，必须杀掉一个字符或多个
+cl可以删除一个
+c$是删除当前位置下的所有内容
+
+i a出入的缺点，或者说是c操作的优点，i a无法以当前断点位置删除内容，如同这里，明显这里每行的特征是希望在+号前后添加内容，所以宏录制的时候就应该从+出直接操作，如果用a操作则下次重复的时候必须也要定位到a才能重复，而明显最后一个+后面不是a，用i操作是同样的问题。但是用c操作就可以直接对+作为分隔符，那么录制的效果自然是最好的,一个.重复的动作是从两次按esc之间的时间的所有操作都在一个.的可重复范围
+可以试验求证
+**/
