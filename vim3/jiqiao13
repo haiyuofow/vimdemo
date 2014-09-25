@@ -1,0 +1,17 @@
+nihaon jffsdfsdfsdfs fsdfsdf
+nihaon jfsdfs fsdfsdf
+nihaon jfsdfs fsdfsdf
+nihaon jfsdfs fsdfsdf
+nihaon jfsdfs fsdfsdf
+nihaon jfsnihaon jfsdfs fsdfsdf
+
+/*****
+比较有意思，原来一致认为删除只能使回退键盘，原来vim也支持在插入模式的删除操作
+ctrl+h 删除前一个字符
+ctrl+w 删除前一个字
+ctrl+u 删除到行首
+
+实践证实，bash中也支持这种删除方式
+****hanifsfsd你haonihafsfsfsfsnihanihao
+
+ctr+O命令可以让vim执行完一条常规模式的命令后立即返回到插入模式，这个从效果上已经比较类似在插入模式下执行常规模式的命令啦    ，，，这样的直接效果就是节省了一步A的操作，因为这种模式在返回的时候，还是会停留在光标原来停留的地方

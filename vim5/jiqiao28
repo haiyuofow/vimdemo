@@ -1,0 +1,27 @@
+1ni hao vim , i am you fans
+2ni hao vim , i am you fans
+3ni hao vim , i am you fans
+5ni hao vim , i am you fans
+5ni hao vim , i am you fans
+5ni hao vim , i am you fans
+5ni hao vim , i am you fans
+5ni hao vim , i am you fans
+5ni hao vim , i am you fans
+5ni hao vim , i am you fans
+5ni hao vim , i am you fans
+5ni hao vim , i am you fans
+5ni hao vim , i am you fans
+4ni hao vim , i am you fans
+6ni hao vim , i am you fans
+7ni hao vim , i am you fans
+ni hao vim , i am you fans
+ni hao vim , i am you fans
+ni hao vim , i am you fans
+ni hao vim , i am you fans
+ni hao vim , i am you fans
+/****
+
+ex命令行很重要的特点就是他可以指定灵活的范围，我们可以直接用:n指定第n行，也可以用m,n指定m到n行的范围内的内容
+其中.代表的是光标所在的位置，%代表的是全部，那么我们下次全选的适合就可以直接使用%命令啦
+另外，我们不仅可以直接指定范围，还可以把高亮的内容自动换成对应的地址范围，如此一来，我们就可以在visual视图下使用这个选区命令啦
+***/
